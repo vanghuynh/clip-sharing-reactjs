@@ -53,44 +53,44 @@ const LoginForm = () => {
 
   return (
     <div>
-    <div className="form-login">
-      <form onSubmit={submitHandler}>
-        <div className="grid">
-          <div className="login">
-            <div className="login__headgier">
-            </div>
-            <div className="login__form">
-              <div className="login__content">
-              <img src={Logo} alt="logo" className="logo" style={{width:"300px"}}
-                   onClick={clipHandler}
-              ></img>
-                <h2 className="login__content-heading">
-                  Login
-                </h2>
-                <div className="login__import">
-                  <div className="form-field">
-                    <input type="text" id="name" ref={emailInputRef} required className="form-input" placeholder=" " />
-                    <lable htmlFor="name" className="form-lable">User Name</lable>
-                  </div>
-                  <div className="form-field">
-                    <input type="password"
-            id="password"
-            ref={paswordInputRef}
-            required className="form-input" placeholder=" " />
-                    <lable htmlFor="password" className="form-lable">Password</lable>
-                  </div>
-                  <button className="login__import-link" type="button"
-                          onClick={registerHandler}>
-                    Register
-                  </button>
-                  <button className="login__import-btn" type="submit">
+      <div className="form-login">
+        <form onSubmit={submitHandler}>
+          <div className="grid">
+            <div className="login">
+              <div className="login__headgier">
+              </div>
+              <div className="login__form">
+                <div className="login__content">
+                  <img src={Logo} alt="logo" className="logo" style={{ width: "300px" }}
+                    onClick={clipHandler}
+                  ></img>
+                  <h2 className="login__content-heading">
                     Login
-                  </button>
+                  </h2>
+                  <div className="login__import">
+                    <div className="form-field">
+                      <input type="text" id="name" ref={emailInputRef} required className="form-input" placeholder=" " />
+                      <lable htmlFor="name" className="form-lable">User Name</lable>
+                    </div>
+                    <div className="form-field">
+                      <input type="password"
+                        id="password"
+                        ref={paswordInputRef}
+                        required className="form-input" placeholder=" " />
+                      <lable htmlFor="password" className="form-lable">Password</lable>
+                    </div>
+                    <button className="login__import-link" type="button"
+                      onClick={registerHandler}>
+                      Register
+                    </button>
+                    <button className="login__import-btn" type="submit">
+                      Login
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </form>
       </div>
     </div>

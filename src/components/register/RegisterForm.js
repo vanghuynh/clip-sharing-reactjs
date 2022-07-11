@@ -37,41 +37,41 @@ const RegisterForm = () => {
 
   return (
     <div>
-    <div className="form-login">
-      <form onSubmit={submitHandler}>
-        <div className="grid">
-          <div className="login">
-            <div className="login__headgier">
-            </div>
-            <div className="login__form">
-              <div className="login__content">
-                <h2 className="login__content-heading">
-                  Register
-                </h2>
-                <div className="login__import">
-                  <div className="form-field">
-                    <input type="text" id="name" ref={emailInputRef} required className="form-input" placeholder=" " />
-                    <lable htmlFor="name" className="form-lable">User Name</lable>
-                  </div>
-                  <div className="form-field">
-                    <input type="password"
-            id="password"
-            ref={paswordInputRef}
-            required className="form-input" placeholder=" " />
-                    <lable htmlFor="password" className="form-lable">Password</lable>
-                  </div>
-                  <button className="login__import-link" type="button"
-                    onClick={loginHandler}>
-                    Login
-                  </button>
-                  <button className="login__import-btn" type="submit">
+      <div className="form-login">
+        <form onSubmit={submitHandler}>
+          <div className="grid">
+            <div className="login">
+              <div className="login__headgier">
+              </div>
+              <div className="login__form">
+                <div className="login__content">
+                  <h2 className="login__content-heading">
                     Register
-                  </button>
+                  </h2>
+                  <div className="login__import">
+                    <div className="form-field">
+                      <input type="text" id="name" ref={emailInputRef} required className="form-input" placeholder=" " />
+                      <lable htmlFor="name" className="form-lable">User Name</lable>
+                    </div>
+                    <div className="form-field">
+                      <input type="password"
+                        id="password"
+                        ref={paswordInputRef}
+                        required className="form-input" placeholder=" " />
+                      <lable htmlFor="password" className="form-lable">Password</lable>
+                    </div>
+                    <button className="login__import-link" type="button"
+                      onClick={loginHandler}>
+                      Login
+                    </button>
+                    <button className="login__import-btn" type="submit">
+                      Register
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </form>
       </div>
     </div>

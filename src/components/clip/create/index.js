@@ -3,10 +3,10 @@ import Modal from "react-bootstrap/Modal";
 import ModalBody from "react-bootstrap/ModalBody";
 import ModalHeader from "react-bootstrap/ModalHeader";
 
-import {useDispatch, useSelector} from "react-redux";
-import {popUpActions} from "../../../redux/store/popup";
-import {useState} from "react";
-import {saveClip} from "../../../api/service";
+import { useDispatch, useSelector } from "react-redux";
+import { popUpActions } from "../../../redux/store/popup";
+import { useState } from "react";
+import { saveClip } from "../../../api/service";
 import Swal from "sweetalert2";
 
 const ClipCreate = () => {
@@ -69,13 +69,11 @@ const ClipCreate = () => {
     <Modal
       show={showPopUp}
       className="modal-content2"
-      contentClassName="modal-content1"
-    >
+      contentClassName="modal-content1">
       <ModalHeader>
         <div className="header_2">
           <h5 style={{ color: "#007bff" }}>SHARE YOUR MOVIE</h5>
         </div>
-
         <div style={{ borderBottom: "0px solid" }}></div>
       </ModalHeader>
 
@@ -105,8 +103,7 @@ const ClipCreate = () => {
                   type="button"
                   className="btn btn-light"
                   data-dismiss="modal"
-                  onClick={hidePopUp}
-                >
+                  onClick={hidePopUp}>
                   Cancel
                 </button>
                 <button type="submit" className="btn btn-danger-del">

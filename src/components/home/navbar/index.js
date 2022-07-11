@@ -2,7 +2,7 @@ import React from "react";
 import { authActions } from "../../../redux/store/auth";
 import { useSelector, useDispatch } from "react-redux";
 import Swal from "sweetalert2";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 export default function Navbar() {
   const id = useSelector((state) => state.auth.id);
@@ -34,27 +34,27 @@ export default function Navbar() {
   return (
     <div class="wrap">
       <nav>
-         <ul class="primary">
-           {isLogin &&<li className="float--right">
+        <ul class="primary">
+          {isLogin && <li className="float--right">
             <a class="nav-color" onClick={logoutHandler}>
               Logout
             </a>
             <ul class="sub"></ul>
           </li>}
-           {isLogin && <li className="float--right">
+          {isLogin && <li className="float--right">
 
             <p class="nav-color1">
-             {id}
+              {id}
             </p>
             <ul class="sub"></ul>
           </li>}
-           {!isLogin && <li className="float--right">
+          {!isLogin && <li className="float--right">
 
-             <p class="nav-color1" onClick={loginHandler}>
-               Login
-             </p>
-             <ul class="sub"></ul>
-           </li>}
+            <p class="nav-color1" onClick={loginHandler}>
+              Login
+            </p>
+            <ul class="sub"></ul>
+          </li>}
         </ul>
       </nav>
     </div>

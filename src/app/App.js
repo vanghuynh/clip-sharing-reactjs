@@ -31,18 +31,15 @@ function App() {
         <Route path="/register" exact>
           <RegisterForm />
         </Route>
-        {/*{isAuthed && (*/}
-          <>
-            <Header />
-            <Navbar />
-            <Switch>
-              <Route>
-                <Route path="/clips" exact component={ClipList} />
-              </Route>
-            </Switch>
-          </>
-        {/*)}*/}
-
+        <>
+          <Header />
+          <Navbar />
+          <Switch>
+            <Route>
+              <Route path="/clips" exact component={ClipList} />
+            </Route>
+          </Switch>
+        </>
         <Route path="*">
           <Redirect to="/login" />
         </Route>
